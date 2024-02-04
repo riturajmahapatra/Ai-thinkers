@@ -3,6 +3,11 @@
 @media (300px <=width <= 760px) {
   .hamburger {
     display: block;
+    width: fit-content;
+    margin-left: -70px;
+  }
+  .hamburger img {
+    width: fit-content;
   }
   .main_content {
     display: none;
@@ -94,12 +99,15 @@
 @media (300px <=width <= 600px) {
   .contact {
     display: grid;
+    justify-content: center;
+    align-items: center;
   }
   .contact_content {
     width: 100%;
   }
   .contact-form {
-    width: 100%;
+    width: 89%;
+    margin-left: 40px;
   }
 }
 
