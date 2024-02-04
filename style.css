@@ -7,6 +7,7 @@
   font-family: 'Urbanist', sans-serif;
   color: white;
 }
+
 .container {
   position: relative;
   background-color: rgba(0, 0, 0, 0.37);
@@ -86,7 +87,9 @@
   background-color: transparent;
   border: 1px solid #bedb42;
 }
-
+.hamburger {
+  display: none;
+}
 /* page 1 starts here */
 .main_photo {
   height: 100%;
@@ -147,6 +150,7 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
+  text-decoration: none;
   margin-block: 50px;
 }
 .page2_content button {
@@ -317,6 +321,7 @@
 }
 .page4_content {
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   justify-content: space-between;
   align-items: center;
@@ -347,6 +352,7 @@
 
 .small_card {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -491,6 +497,8 @@
 }
 .cars_cards {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .car_card {
@@ -533,9 +541,9 @@
   color: #4b5563;
   margin-bottom: 15px;
 }
-
+/* page6 */
 .page6 {
-  height: 90vh;
+  height: 90%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -545,6 +553,7 @@
 .page6_container {
   width: 90%;
   height: 100%;
+  padding-top: 50px;
   display: flex;
   border-radius: 20px;
   background-color: #2d2d2d;
@@ -711,27 +720,90 @@ li::marker {
   display: grid;
   text-align: end;
 }
-
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
+/* contact us pg */
+.contact {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.contact_content {
+  width: 50%;
+  padding: 70px;
+}
+.contact_upper h1 {
+  font-size: 3.5rem;
+}
+.contact_upper p {
+  font-size: 1.2rem;
+}
+.contact_lower p {
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+.contact_lower p:hover {
+  color: #a0b448;
+}
+.contact-form {
+  width: 40%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #2d2d2d;
+  border-radius: 20px;
+  border: 1px solid #6e6e6e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact_h1 {
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+  font-size: 2rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
-  }
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 0.5rem;
+}
 
-  .nav__item--extra {
-    flex-grow: 2;
-  }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8f8f8f;
+  transition: border-color 0.3s ease;
+}
 
-  .footer__addr {
-    flex: 1 0px;
-  }
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #a0b448;
+}
 
-  .footer__nav {
-    flex: 2 0px;
-  }
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: black;
+  background-color: #bedb42;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.form-group button:hover {
+  color: #bedb42;
+  background-color: transparent;
+  border: 1px solid #bedb42;
 }

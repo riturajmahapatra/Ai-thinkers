@@ -1,3 +1,109 @@
+/* header/nav */
+
+@media (300px <=width <= 760px) {
+  .hamburger {
+    display: block;
+  }
+  .main_content {
+    display: none;
+  }
+  .booking_btn {
+    display: none;
+    overflow: hidden;
+  }
+  .header {
+    overflow: hidden;
+  }
+  .page1_content {
+    width: 100%;
+    padding: 20px;
+  }
+  .page1_content h1 {
+    font-size: 7vmax;
+  }
+  .left_asset {
+    display: none;
+  }
+}
+/* page2 */
+@media (300px <=width <= 760px) {
+  h1 {
+    font-size: 7vmax;
+  }
+
+  .page2_content h1 {
+    font-size: 7vmax;
+  }
+  .page2_content button {
+    margin-bottom: 20px;
+  }
+  .cards_container {
+    display: grid;
+  }
+  #up_card img {
+    display: none;
+  }
+}
+/* page3 */
+@media (300px <=width <= 760px) {
+  .big_card {
+    display: grid;
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .left_section {
+    width: 100%;
+  }
+  .right_section {
+    width: fit-content;
+  }
+  .uncle_img {
+    min-width: 300px;
+    overflow: hidden;
+  }
+}
+/* page4 */
+@media (300px <=width <= 600px) {
+  .small_card {
+    display: grid;
+  }
+  .small_cards {
+    width: 100%;
+  }
+  .small_cards h2 {
+    font-size: 3vmax;
+  }
+}
+/* page 6 */
+@media (300px <=width <= 600px) {
+  .page6_container {
+    display: grid;
+    height: fit-content;
+  }
+  .page6_left {
+    width: 100%;
+  }
+  .page6_right {
+    width: 100%;
+  }
+  .app_btns {
+    display: none;
+  }
+}
+/* contact */
+@media (300px <=width <= 600px) {
+  .contact {
+    display: grid;
+  }
+  .contact_content {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* footer section */
 @media screen and (min-width: 24.375em) {
   .legal .legal__links {
     margin-left: auto;
