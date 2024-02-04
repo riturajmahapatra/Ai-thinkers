@@ -66,6 +66,9 @@
     min-width: 300px;
     overflow: hidden;
   }
+  .testimonial {
+    left: 2px;
+  }
 }
 /* page4 */
 @media (300px <=width <= 600px) {
